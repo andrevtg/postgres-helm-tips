@@ -1,0 +1,5 @@
+postgresqlPostgresPassword: newpwd # db admin
+postgresqlDatabase: mynewdb    # a new db
+postgresqlUsername: mynewuser  # mynewdb owner
+postgresqlPassword: mynewpwd   # mynewuser's password
+
