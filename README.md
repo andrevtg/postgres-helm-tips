@@ -40,11 +40,10 @@ helm upgrade -i my-release -f my-values.yaml bitnami/postgresql
 
 ## Init Db Scripts
 
-Init DB scripts can be passed by Helm CLI, although it is not quite intuitive. Define a yaml file containing the SQL scripts:
+Init DB scripts can be passed by Helm CLI, although it is not quite intuitive. Define a text file containing the SQL scripts:
 
-```ini
-# contents of `my-otherdb.ini` file
-my-otherdb.sql="CREATE DATABASE myotherdb WITH OWNER mynewuser;"
+```sql
+CREATE DATABASE myotherdb WITH OWNER mynewuser;
 ```
 
 Then install a release with it:
